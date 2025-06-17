@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Fernando Apolinaria Moreira</title>
+
+    <style>
+        body {
+            background-color: #79542450;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #34495e;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .listas {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .listas ul {
+            list-style-type: square;
+            background-color: #79542450;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+
+        .listas h3 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .imagem-centro {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+/* Estilo geral da tabela */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+/* Cabeçalho e células */
+th, td {
+    border: 2px solid #79542450;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #795424;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Linhas alternadas */
+tr:nth-child(even) {
+    background-color: #f9f5f0;
+}
+
+/* Hover na linha */
+tr:hover {
+    background-color: #f3e9e9;
+    transition: background-color 0.3s;
+}
+
+/* Links */
+a {
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c0392b; /* Muda para vermelho escuro ao passar o mouse */
+}
+
+/* Imagens na tabela */
+table img {
+    border-radius: 10px;
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Luiz Fernando Apolinaria Moreira</h1>
+
+    <h2>Sobre Mim</h2>
+
+    <p>
+        Me chamo Luiz Fernando, também apelidado pelos meus amigos de Batata. Tenho 23 anos, sou recém-casado com uma paulista maravilhosa.
+        Sou nascido e criado no estado do Espírito Santo e sempre morei na cidade da Serra.
+        Atualmente trabalho na área de faturamento e no período da noite me dedico aos estudos.
+        Não tenho muito tempo para hobbies, mas meus principais são jogar futebol e vídeo game.
+        Além disso, sou sonhador e quero realizar todos os meus sonhos: viajar bastante, explorar o mundo e dar orgulho para minha família — minha mãe, irmãos e minha esposa.
+    </p>
+
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+    <p id="mensagem"></p>
+
+    <div class="listas">
+        <ul>
+            <h3>Jogar Video Game</h3>
+            <li>Valorant</li>
+            <li>Fifa</li>
+            <li>Euro Truck</li>
+        </ul>
+
+        <ul>
+            <h3>Praticar Esportes</h3>
+            <li>Futebol</li>
+            <li>Vôlei</li>
+            <li>Corrida</li>
+        </ul>
+
+        <ul>
+            <h3>Cozinhar</h3>
+            <li>Macarrão</li>
+            <li>Pudim</li>
+            <li>Brownie</li>
+        </ul>
+    </div>
+
+    <!-- Imagem centralizada -->
+    <img src="/Imagens/Hobbie.jpg" alt="Imagem representando um hobbie" class="imagem-centro">
+
+    <!-- Link estilizado -->
+    <p style="text-align: center;">
+        <a href="https://store.steampowered.com/?l=portuguese" target="_blank">
+            Clique e visite o site preferido dos gamers!
+        </a>
+    </p>
+
+    <!-- Tabela -->
+   <h2>Lugares Para Visitar</h2>
+
+<table border="1">
+    <tr>
+        <th>País</th>
+        <th>Imagem</th>
+    </tr>
+
+    <tr>
+        <td>França</td>
+        <td><img src="/Imagens/França.jpg" width="200" height="120" alt="França"></td>
+    </tr>
+
+    <tr>
+        <td>Inglaterra</td>
+        <td><img src="/Imagens/Londres.jpg" width="200" height="120" alt="Inglaterra"></td>
+    </tr>
+
+    <tr>
+        <td>Itália</td>
+        <td><img src="/Imagens/Italia.jpg" width="200" height="120" alt="Itália"></td>
+    </tr>
+</table>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerHTML = "Olá mundo, seja bem vindo! Insista, persista, nunca desista que uma hora você conquista";
+        }
+    </script>
+
+</body>
+
+</html>
